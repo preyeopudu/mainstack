@@ -1,0 +1,126 @@
+.converationcontainer {
+  background: linear-gradient(180deg, #22252d 0%, #0a0c10 100%);
+  border-radius: 30px;
+  padding: 50px 30px;
+  justify-content: space-between;
+  display: flex;
+  margin: 100px 50px;
+}
+
+.converationcontainer div {
+  margin: 0 5px;
+}
+
+.conversationheader {
+  font-family: "Plus Jakarta";
+  font-size: 40px;
+  color: white;
+}
+
+.conversationheader,
+.conversationtext {
+  width: 100%;
+}
+
+.conversationtext {
+  font-family: "Inter";
+  color: #797d87;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.conversationbutton {
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  font-family: "Inter";
+  color: #020409;
+  line-height: 19px;
+  padding: 14px 18px;
+  margin-top: 10px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.conversationimages {
+  display: flex;
+  flex: 3;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0px 10px;
+}
+
+.conversationimages img {
+  width: 100%;
+  margin: 0 10px;
+}
+
+.conversationtextcontainer {
+  position: relative;
+  flex: 2;
+}
+
+@media screen and (max-width: 1023px) {
+  .conversationheader,
+  .conversationtext {
+    text-align: center;
+  }
+
+  .converationcontainer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .converationcontainer div {
+    margin: 0;
+  }
+  .conversationbutton {
+    margin: 30px 0 90px 0;
+    border-radius: 15px;
+    width: 60%;
+    font-size: 20px;
+  }
+
+  .conversationtextcontainer {
+    width: 100%;
+  }
+
+  .conversationimages img {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .conversationimages {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .conversationimages div {
+    margin-top: 40px;
+  }
+
+  .conversationimages img {
+    margin: 0;
+  }
+
+  .conversationbutton {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .converationcontainer {
+    margin: 1px;
+    margin-top: 50px;
+  }
+
+  .conversationheader {
+    font-size: 30px;
+  }
+
+  .conversationbutton {
+    width: 100%;
+  }
+}
