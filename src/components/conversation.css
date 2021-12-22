@@ -1,10 +1,16 @@
 .converationcontainer {
-  background: linear-gradient(180deg, #22252d 0%, #0a0c10 100%);
   border-radius: 30px;
   padding: 50px 30px;
-  justify-content: space-between;
   display: flex;
   margin: 100px 50px;
+  flex: 1;
+  justify-content: center;
+  justify-self: center;
+}
+
+.gridContainer {
+  display: grid;
+  gap: 20px;
 }
 
 .converationcontainer div {
@@ -35,11 +41,8 @@
   border-radius: 100px;
   font-family: "Inter";
   color: #020409;
-  line-height: 19px;
-  padding: 14px 18px;
-  margin-top: 10px;
-  font-size: 16px;
-  white-space: nowrap;
+  padding: 15px 28px;
+  font-size: 18px;
 }
 
 .conversationimages {
@@ -107,6 +110,11 @@
 
   .conversationbutton {
     margin: 0;
+  }
+
+  .converationcontainer {
+    margin: 80px 10px;
+    border-radius: 5px;
   }
 }
 

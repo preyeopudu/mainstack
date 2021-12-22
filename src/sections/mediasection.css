@@ -1,0 +1,67 @@
+.mediatitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.mediaheader {
+  font-family: "Plus Jakarta Display";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.mediatext {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #6f778a;
+}
+
+.mediacontainer {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding: 50px 30px;
+  margin: 100px 50px;
+  column-gap: 30px;
+}
+
+.mediatextcontainer {
+  padding: 0 50px;
+}
+
+.started {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1080px) {
+  .mediacontainer {
+    grid-template-columns: none;
+    text-align: center;
+  }
+
+  .mediaimage {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mediaimage img {
+    width: 50%;
+  }
+
+  .mediacontainer {
+    display: inline;
+  }
+
+  .started {
+    margin-top: 0;
+  }
+
+  .mediatextcontainer {
+    padding: 0;
+  }
+}

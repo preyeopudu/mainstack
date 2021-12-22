@@ -1,0 +1,72 @@
+.paymentContainer {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding: 50px 30px;
+  margin: 100px 50px;
+  justify-content: center;
+}
+
+.paymentContainer div {
+  margin: 0 10px;
+  padding: 0 20px;
+
+  border-radius: 30px;
+}
+
+.coffeecontainer {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px 10px #e2dfdf;
+}
+
+.seminarcontainer {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px 10px #e2dfdf;
+}
+
+.paymentheader {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.paymenttext {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .paymentContainer {
+    display: grid;
+    grid-template-columns: none;
+    padding: 0;
+    margin: 10px;
+  }
+
+  .paymentContainer div {
+    margin: 30px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .paymentContainer div img {
+    width: 100%;
+  }
+
+  .paymentContainer div {
+    margin: 30px 0;
+    padding: 0;
+    box-shadow: none;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+}

@@ -2,7 +2,7 @@ import "./conversation.css";
 
 const Conversation = (props) => {
   return (
-    <div className="converationcontainer">
+    <div className="converationcontainer" style={{ background: props.color }}>
       <div className="conversationtextcontainer">
         <p className="conversationheader">
           Conversations designed for people, not bots.
@@ -17,11 +17,13 @@ const Conversation = (props) => {
           <img src={props.first} alt="marv" />
         </div>
 
-        <div>
-          <img src={props.second} alt="marv" />
+        {props.second ? (
+          <div className="gridContainer">
+            <img src={props.second} alt="marv" />
 
-          {props.third ? <img src={props.third} alt="marv" /> : null}
-        </div>
+            {props.third ? <img src={props.third} alt="marv" /> : null}
+          </div>
+        ) : null}
       </div>
     </div>
   );

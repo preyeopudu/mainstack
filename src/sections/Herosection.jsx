@@ -23,7 +23,7 @@ const HeroSection = () => {
 
       <div className="heroformcontainer">
         <div className="heroinputcontainer">
-          <p>Mainstack.app/</p>
+          <p className="inputtag">Mainstack.app/</p>
           <input type="text" placeholder="yourname" />
           <FontAwesomeIcon
             icon={faCheckCircle}
